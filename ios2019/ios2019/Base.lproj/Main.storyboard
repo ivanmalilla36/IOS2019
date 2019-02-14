@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yWo-Oh-w0X">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,116 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSI-zf-8gU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <state key="normal" title="Practica 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PGU-gd-okk" kind="show" id="ZfD-8A-NXq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jSI-zf-8gU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="a5B-s2-mJX"/>
+                            <constraint firstItem="jSI-zf-8gU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iEJ-Pa-SvY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jSI-zf-8gU" secondAttribute="trailing" id="qm0-MJ-isL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fuM-Uf-bgc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1495" y="36"/>
+        </scene>
+        <!--Practica1 View Controller-->
+        <scene sceneID="ZZ1-x5-YdY">
+            <objects>
+                <viewController id="PGU-gd-okk" customClass="Practica1ViewController" customModule="ios2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="404-T7-P08">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suma de dos numeros" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbt-kn-mk0">
+                                <rect key="frame" x="102" y="74" width="171" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Numero 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hfi-80-HPz">
+                                <rect key="frame" x="5" y="110" width="169" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Numero 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cjo-00-cLU">
+                                <rect key="frame" x="201.5" y="110" width="168.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nat-97-Ezj">
+                                <rect key="frame" x="0.0" y="155" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Suma">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="suma:" destination="PGU-gd-okk" eventType="touchUpInside" id="Y3t-Be-uy6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lbt-kn-mk0" firstAttribute="centerX" secondItem="404-T7-P08" secondAttribute="centerX" id="ATz-gD-tKZ"/>
+                            <constraint firstItem="Hfi-80-HPz" firstAttribute="top" secondItem="Lbt-kn-mk0" secondAttribute="bottom" constant="15" id="HUA-cL-ORm"/>
+                            <constraint firstItem="Hfi-80-HPz" firstAttribute="leading" secondItem="YiA-z3-UKQ" secondAttribute="leading" constant="5" id="JYZ-nC-U9r"/>
+                            <constraint firstItem="Nat-97-Ezj" firstAttribute="top" secondItem="Hfi-80-HPz" secondAttribute="bottom" constant="15" id="Ltz-bF-a7d"/>
+                            <constraint firstItem="YiA-z3-UKQ" firstAttribute="trailing" secondItem="cjo-00-cLU" secondAttribute="trailing" constant="5" id="RdJ-gC-gmN"/>
+                            <constraint firstItem="cjo-00-cLU" firstAttribute="top" secondItem="Lbt-kn-mk0" secondAttribute="bottom" constant="15" id="jby-0V-sUM"/>
+                            <constraint firstItem="Lbt-kn-mk0" firstAttribute="top" secondItem="YiA-z3-UKQ" secondAttribute="top" constant="10" id="kgF-9i-W9D"/>
+                            <constraint firstItem="Hfi-80-HPz" firstAttribute="width" secondItem="404-T7-P08" secondAttribute="width" multiplier="0.45" id="o8X-Bx-2x8"/>
+                            <constraint firstItem="Nat-97-Ezj" firstAttribute="leading" secondItem="YiA-z3-UKQ" secondAttribute="leading" id="stB-Il-Y3h"/>
+                            <constraint firstItem="cjo-00-cLU" firstAttribute="width" secondItem="404-T7-P08" secondAttribute="width" multiplier="0.45" id="veA-Yg-Ojm"/>
+                            <constraint firstItem="YiA-z3-UKQ" firstAttribute="trailing" secondItem="Nat-97-Ezj" secondAttribute="trailing" id="yCp-au-yjE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YiA-z3-UKQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtNum1" destination="Hfi-80-HPz" id="0V9-fN-N5P"/>
+                        <outlet property="txtNum2" destination="cjo-00-cLU" id="4o3-dG-SO4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uoh-Ym-Hgv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2255" y="69"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fIX-mY-42B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yWo-Oh-w0X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="djp-NR-YQf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FGz-vs-dTF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G5a-Nj-Tbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="27"/>
         </scene>
     </scenes>
 </document>

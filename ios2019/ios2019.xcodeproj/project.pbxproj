@@ -14,6 +14,7 @@
 		37E1EEEC220D125D002A2A71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E1EEEA220D125D002A2A71 /* LaunchScreen.storyboard */; };
 		37E1EEF7220D125D002A2A71 /* ios2019Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1EEF6220D125D002A2A71 /* ios2019Tests.swift */; };
 		37E1EF02220D125D002A2A71 /* ios2019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1EF01220D125D002A2A71 /* ios2019UITests.swift */; };
+		37E1EF10220D1C33002A2A71 /* Practica1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1EF0F220D1C33002A2A71 /* Practica1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		37E1EEFD220D125D002A2A71 /* ios2019UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios2019UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E1EF01220D125D002A2A71 /* ios2019UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios2019UITests.swift; sourceTree = "<group>"; };
 		37E1EF03220D125D002A2A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E1EF0F220D1C33002A2A71 /* Practica1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				37E1EEE8220D125D002A2A71 /* Assets.xcassets */,
 				37E1EEEA220D125D002A2A71 /* LaunchScreen.storyboard */,
 				37E1EEED220D125D002A2A71 /* Info.plist */,
+				37E1EF0F220D1C33002A2A71 /* Practica1ViewController.swift */,
 			);
 			path = ios2019;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E1EEE4220D125C002A2A71 /* ViewController.swift in Sources */,
+				37E1EF10220D1C33002A2A71 /* Practica1ViewController.swift in Sources */,
 				37E1EEE2220D125C002A2A71 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
