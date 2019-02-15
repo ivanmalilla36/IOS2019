@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		376CB99622164E300090F0A6 /* ConvertidorDeGradosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376CB99522164E300090F0A6 /* ConvertidorDeGradosViewController.swift */; };
 		37E1EEE2220D125C002A2A71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1EEE1220D125C002A2A71 /* AppDelegate.swift */; };
 		37E1EEE4220D125C002A2A71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1EEE3220D125C002A2A71 /* ViewController.swift */; };
 		37E1EEE7220D125C002A2A71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E1EEE5220D125C002A2A71 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		376CB99522164E300090F0A6 /* ConvertidorDeGradosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertidorDeGradosViewController.swift; sourceTree = "<group>"; };
+		37812CA92214FBBD00AA901E /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		37E1EEDE220D125C002A2A71 /* ios2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E1EEE1220D125C002A2A71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37E1EEE3220D125C002A2A71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +82,7 @@
 		37E1EED5220D125C002A2A71 = {
 			isa = PBXGroup;
 			children = (
+				37812CA92214FBBD00AA901E /* MyPlayground.playground */,
 				37E1EEE0220D125C002A2A71 /* ios2019 */,
 				37E1EEF5220D125D002A2A71 /* ios2019Tests */,
 				37E1EF00220D125D002A2A71 /* ios2019UITests */,
@@ -106,6 +110,7 @@
 				37E1EEEA220D125D002A2A71 /* LaunchScreen.storyboard */,
 				37E1EEED220D125D002A2A71 /* Info.plist */,
 				37E1EF0F220D1C33002A2A71 /* Practica1ViewController.swift */,
+				376CB99522164E300090F0A6 /* ConvertidorDeGradosViewController.swift */,
 			);
 			path = ios2019;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E1EEE4220D125C002A2A71 /* ViewController.swift in Sources */,
+				376CB99622164E300090F0A6 /* ConvertidorDeGradosViewController.swift in Sources */,
 				37E1EF10220D1C33002A2A71 /* Practica1ViewController.swift in Sources */,
 				37E1EEE2220D125C002A2A71 /* AppDelegate.swift in Sources */,
 			);
