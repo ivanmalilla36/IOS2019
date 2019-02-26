@@ -17,6 +17,7 @@
 		37E1EF02220D125D002A2A71 /* ios2019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1EF01220D125D002A2A71 /* ios2019UITests.swift */; };
 		37E1EF10220D1C33002A2A71 /* Practica1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1EF0F220D1C33002A2A71 /* Practica1ViewController.swift */; };
 		8433989E221F88C500E294B0 /* PrimerParcialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433989D221F88C500E294B0 /* PrimerParcialViewController.swift */; };
+		8469A9CB2224CFA5005E13E9 /* MotionShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469A9CA2224CFA5005E13E9 /* MotionShakeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		37E1EF0F220D1C33002A2A71 /* Practica1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica1ViewController.swift; sourceTree = "<group>"; };
 		8433989C221F850B00E294B0 /* PrimerPracrial.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PrimerPracrial.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8433989D221F88C500E294B0 /* PrimerParcialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerParcialViewController.swift; sourceTree = "<group>"; };
+		8469A9CA2224CFA5005E13E9 /* MotionShakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionShakeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		37E1EED5220D125C002A2A71 = {
 			isa = PBXGroup;
 			children = (
+				8469A9CA2224CFA5005E13E9 /* MotionShakeViewController.swift */,
 				8433989C221F850B00E294B0 /* PrimerPracrial.playground */,
 				37812CA92214FBBD00AA901E /* MyPlayground.playground */,
 				37E1EEE0220D125C002A2A71 /* ios2019 */,
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8433989E221F88C500E294B0 /* PrimerParcialViewController.swift in Sources */,
+				8469A9CB2224CFA5005E13E9 /* MotionShakeViewController.swift in Sources */,
 				37E1EEE4220D125C002A2A71 /* ViewController.swift in Sources */,
 				376CB99622164E300090F0A6 /* ConvertidorDeGradosViewController.swift in Sources */,
 				37E1EF10220D1C33002A2A71 /* Practica1ViewController.swift in Sources */,
