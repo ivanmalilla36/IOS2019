@@ -20,6 +20,12 @@
 		55D4217476D3B4E68A8FB834 /* Pods_ios2019Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC515D198A69E690B58FDAC /* Pods_ios2019Tests.framework */; };
 		8433989E221F88C500E294B0 /* PrimerParcialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433989D221F88C500E294B0 /* PrimerParcialViewController.swift */; };
 		8469A9CB2224CFA5005E13E9 /* MotionShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469A9CA2224CFA5005E13E9 /* MotionShakeViewController.swift */; };
+		84CE85DB2231F97E00D06F7D /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE85DA2231F97E00D06F7D /* SpotifyLoginViewController.swift */; };
+		84CE85DE2231FA3300D06F7D /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84CE85DD2231FA3300D06F7D /* moments.mp4 */; };
+		84CE85E22232003400D06F7D /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE85E02232003400D06F7D /* VideoCutter.swift */; };
+		84CE85E32232003400D06F7D /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE85E12232003400D06F7D /* VideoSplashViewController.swift */; };
+		84CE85E52232048A00D06F7D /* loginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE85E42232048A00D06F7D /* loginFormViewController.swift */; };
+		84CE85E7223204DD00D06F7D /* RegisterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE85E6223204DD00D06F7D /* RegisterFormViewController.swift */; };
 		84F729162230AF0C0099F562 /* SonarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F729152230AF0C0099F562 /* SonarViewController.swift */; };
 		84F729192230B3DE0099F562 /* cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84F729182230B3DE0099F562 /* cat.wav */; };
 		F99F2E5521E1FDE9871DF832 /* Pods_ios2019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FCB0C38FD207AE08116712 /* Pods_ios2019UITests.framework */; };
@@ -64,6 +70,12 @@
 		8433989C221F850B00E294B0 /* PrimerPracrial.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PrimerPracrial.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8433989D221F88C500E294B0 /* PrimerParcialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerParcialViewController.swift; sourceTree = "<group>"; };
 		8469A9CA2224CFA5005E13E9 /* MotionShakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionShakeViewController.swift; sourceTree = "<group>"; };
+		84CE85DA2231F97E00D06F7D /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
+		84CE85DD2231FA3300D06F7D /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
+		84CE85E02232003400D06F7D /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
+		84CE85E12232003400D06F7D /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
+		84CE85E42232048A00D06F7D /* loginFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginFormViewController.swift; sourceTree = "<group>"; };
+		84CE85E6223204DD00D06F7D /* RegisterFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormViewController.swift; sourceTree = "<group>"; };
 		84F729152230AF0C0099F562 /* SonarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonarViewController.swift; sourceTree = "<group>"; };
 		84F729182230B3DE0099F562 /* cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat.wav; sourceTree = "<group>"; };
 		8F55D356754A2684A328C8AA /* Pods-ios2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios2019.release.xcconfig"; path = "Target Support Files/Pods-ios2019/Pods-ios2019.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +118,9 @@
 		37E1EED5220D125C002A2A71 = {
 			isa = PBXGroup;
 			children = (
+				84CE85E6223204DD00D06F7D /* RegisterFormViewController.swift */,
+				84CE85E42232048A00D06F7D /* loginFormViewController.swift */,
+				84CE85DA2231F97E00D06F7D /* SpotifyLoginViewController.swift */,
 				84F729152230AF0C0099F562 /* SonarViewController.swift */,
 				8469A9CA2224CFA5005E13E9 /* MotionShakeViewController.swift */,
 				8433989C221F850B00E294B0 /* PrimerPracrial.playground */,
@@ -132,6 +147,8 @@
 		37E1EEE0220D125C002A2A71 /* ios2019 */ = {
 			isa = PBXGroup;
 			children = (
+				84CE85DF2231FFB600D06F7D /* library */,
+				84CE85DC2231F9FA00D06F7D /* files */,
 				84F729172230B31B0099F562 /* sounds */,
 				37E1EEE1220D125C002A2A71 /* AppDelegate.swift */,
 				37E1EEE3220D125C002A2A71 /* ViewController.swift */,
@@ -172,6 +189,23 @@
 				F8FCB0C38FD207AE08116712 /* Pods_ios2019UITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84CE85DC2231F9FA00D06F7D /* files */ = {
+			isa = PBXGroup;
+			children = (
+				84CE85DD2231FA3300D06F7D /* moments.mp4 */,
+			);
+			path = files;
+			sourceTree = "<group>";
+		};
+		84CE85DF2231FFB600D06F7D /* library */ = {
+			isa = PBXGroup;
+			children = (
+				84CE85E02232003400D06F7D /* VideoCutter.swift */,
+				84CE85E12232003400D06F7D /* VideoSplashViewController.swift */,
+			);
+			path = library;
 			sourceTree = "<group>";
 		};
 		84F729172230B31B0099F562 /* sounds */ = {
@@ -307,6 +341,7 @@
 				37E1EEE9220D125D002A2A71 /* Assets.xcassets in Resources */,
 				37E1EEE7220D125C002A2A71 /* Main.storyboard in Resources */,
 				84F729192230B3DE0099F562 /* cat.wav in Resources */,
+				84CE85DE2231FA3300D06F7D /* moments.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,10 +459,15 @@
 			files = (
 				8433989E221F88C500E294B0 /* PrimerParcialViewController.swift in Sources */,
 				8469A9CB2224CFA5005E13E9 /* MotionShakeViewController.swift in Sources */,
+				84CE85DB2231F97E00D06F7D /* SpotifyLoginViewController.swift in Sources */,
+				84CE85E32232003400D06F7D /* VideoSplashViewController.swift in Sources */,
+				84CE85E22232003400D06F7D /* VideoCutter.swift in Sources */,
 				84F729162230AF0C0099F562 /* SonarViewController.swift in Sources */,
 				37E1EEE4220D125C002A2A71 /* ViewController.swift in Sources */,
+				84CE85E52232048A00D06F7D /* loginFormViewController.swift in Sources */,
 				376CB99622164E300090F0A6 /* ConvertidorDeGradosViewController.swift in Sources */,
 				37E1EF10220D1C33002A2A71 /* Practica1ViewController.swift in Sources */,
+				84CE85E7223204DD00D06F7D /* RegisterFormViewController.swift in Sources */,
 				37E1EEE2220D125C002A2A71 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
