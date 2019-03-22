@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UeS-Wc-YWv">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Technology.ttf">
+            <string>Technology-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Count Down Timer View Controller-->
+        <scene sceneID="Phd-wJ-5eL">
+            <objects>
+                <viewController id="UeS-Wc-YWv" customClass="CountDownTimerViewController" customModule="ios2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l7Y-Jr-jB8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9F-bg-zt5">
+                                <rect key="frame" x="121.5" y="258.5" width="132.5" height="150"/>
+                                <fontDescription key="fontDescription" name="Technology-Regular" family="Technology" pointSize="150"/>
+                                <color key="textColor" red="0.77166316839697446" green="0.20763319358112836" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMY-vM-cBa">
+                                <rect key="frame" x="0.0" y="617" width="187.5" height="50"/>
+                                <color key="backgroundColor" red="0.16170417635577147" green="0.31128223551483114" blue="0.38700886140215585" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="liv-hF-YNX"/>
+                                </constraints>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButon:" destination="UeS-Wc-YWv" eventType="touchUpInside" id="Z2r-zr-1Ew"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpt-NP-E8l">
+                                <rect key="frame" x="187.5" y="617" width="187.5" height="50"/>
+                                <color key="backgroundColor" red="0.16173884272575378" green="0.31254541873931885" blue="0.38825756311416626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6eD-ES-2ue"/>
+                                </constraints>
+                                <state key="normal" title="Restart 24">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartButon:" destination="UeS-Wc-YWv" eventType="touchUpInside" id="3io-su-aaz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88M-MX-Gfh">
+                                <rect key="frame" x="263" y="364" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.77061802150000003" green="0.20888140799999999" blue="0.1134959385" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="4zT-5s-Yqd"/>
+                                    <constraint firstAttribute="height" constant="30" id="iL3-0k-ACv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.096883253131207353" green="0.18650127843500874" blue="0.23187204145396934" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wpt-NP-E8l" firstAttribute="width" secondItem="l7Y-Jr-jB8" secondAttribute="width" multiplier="0.5" id="5gF-1N-WyT"/>
+                            <constraint firstItem="SI4-4T-k2l" firstAttribute="trailing" secondItem="wpt-NP-E8l" secondAttribute="trailing" id="Alv-aP-nUz"/>
+                            <constraint firstItem="SI4-4T-k2l" firstAttribute="bottom" secondItem="wpt-NP-E8l" secondAttribute="bottom" id="GKB-v2-rHC"/>
+                            <constraint firstItem="Z9F-bg-zt5" firstAttribute="centerX" secondItem="l7Y-Jr-jB8" secondAttribute="centerX" id="JXQ-HK-Y6w"/>
+                            <constraint firstItem="vMY-vM-cBa" firstAttribute="leading" secondItem="SI4-4T-k2l" secondAttribute="leading" id="Q9y-xd-Ngo"/>
+                            <constraint firstItem="SI4-4T-k2l" firstAttribute="bottom" secondItem="vMY-vM-cBa" secondAttribute="bottom" id="QdB-PA-Ji1"/>
+                            <constraint firstItem="Z9F-bg-zt5" firstAttribute="centerY" secondItem="l7Y-Jr-jB8" secondAttribute="centerY" id="TGa-XA-Vsl"/>
+                            <constraint firstItem="88M-MX-Gfh" firstAttribute="leading" secondItem="Z9F-bg-zt5" secondAttribute="trailing" constant="9" id="YvT-XA-Zhc"/>
+                            <constraint firstItem="vMY-vM-cBa" firstAttribute="width" secondItem="l7Y-Jr-jB8" secondAttribute="width" multiplier="0.5" id="b4c-yI-n1K"/>
+                            <constraint firstItem="88M-MX-Gfh" firstAttribute="top" secondItem="Z9F-bg-zt5" secondAttribute="bottom" constant="-44.5" id="d4A-ZI-WwO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SI4-4T-k2l"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnStartStop" destination="vMY-vM-cBa" id="3K4-Ub-Oyf"/>
+                        <outlet property="lblindicator" destination="88M-MX-Gfh" id="OYE-P7-svw"/>
+                        <outlet property="timaLabel" destination="Z9F-bg-zt5" id="knq-rE-aiT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9l-D2-KcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2977" y="766"/>
+        </scene>
+    </scenes>
+</document>

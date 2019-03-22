@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CnI-rY-x54">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Motion Shake View Controller-->
+        <scene sceneID="RnP-AZ-Xa3">
+            <objects>
+                <viewController id="CnI-rY-x54" customClass="MotionShakeViewController" customModule="ios2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K0H-8s-IpG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Me And Win" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfI-cT-iIx">
+                                <rect key="frame" x="20" y="104" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El ganador Es:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPL-Xu-Gdq">
+                                <rect key="frame" x="20" y="165" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYa-Cb-WhU">
+                                <rect key="frame" x="20" y="236" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wap-oi-28q">
+                                <rect key="frame" x="20" y="256" width="335" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="zQc-Ws-hTQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vt-29-ylk">
+                                <rect key="frame" x="20" y="436" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7zt-Qf-vnh">
+                                <rect key="frame" x="177" y="436" width="178" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubk-1f-h9u">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Insertar">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="insertar:" destination="CnI-rY-x54" eventType="touchUpInside" id="1dU-xZ-sKV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wap-oi-28q" firstAttribute="leading" secondItem="duj-hu-Whv" secondAttribute="leading" constant="20" id="3gt-nU-Unc"/>
+                            <constraint firstItem="IfI-cT-iIx" firstAttribute="top" secondItem="duj-hu-Whv" secondAttribute="top" constant="40" id="6gf-FJ-Vqi"/>
+                            <constraint firstItem="duj-hu-Whv" firstAttribute="trailing" secondItem="Wap-oi-28q" secondAttribute="trailing" constant="20" id="81w-jq-lVW"/>
+                            <constraint firstItem="duj-hu-Whv" firstAttribute="bottom" secondItem="ubk-1f-h9u" secondAttribute="bottom" id="Am4-31-Sj4"/>
+                            <constraint firstItem="Wap-oi-28q" firstAttribute="top" secondItem="gYa-Cb-WhU" secondAttribute="bottom" constant="20" id="Bcv-Pm-K6Q"/>
+                            <constraint firstItem="7zt-Qf-vnh" firstAttribute="top" secondItem="Wap-oi-28q" secondAttribute="bottom" constant="40" id="Ix4-Qg-j2a"/>
+                            <constraint firstItem="sPL-Xu-Gdq" firstAttribute="top" secondItem="IfI-cT-iIx" secondAttribute="bottom" constant="40" id="K4t-Cc-azt"/>
+                            <constraint firstItem="duj-hu-Whv" firstAttribute="trailing" secondItem="sPL-Xu-Gdq" secondAttribute="trailing" constant="20" id="NkK-f4-LYE"/>
+                            <constraint firstItem="IfI-cT-iIx" firstAttribute="leading" secondItem="duj-hu-Whv" secondAttribute="leading" constant="20" id="Use-Oy-FoE"/>
+                            <constraint firstItem="gYa-Cb-WhU" firstAttribute="leading" secondItem="duj-hu-Whv" secondAttribute="leading" constant="20" id="VYR-vT-xMj"/>
+                            <constraint firstItem="duj-hu-Whv" firstAttribute="trailing" secondItem="IfI-cT-iIx" secondAttribute="trailing" constant="20" id="Yt4-sP-RVm"/>
+                            <constraint firstItem="ubk-1f-h9u" firstAttribute="leading" secondItem="duj-hu-Whv" secondAttribute="leading" id="Zwi-bP-kDZ"/>
+                            <constraint firstItem="sPL-Xu-Gdq" firstAttribute="leading" secondItem="duj-hu-Whv" secondAttribute="leading" constant="20" id="cgD-Dk-ku9"/>
+                            <constraint firstItem="3Vt-29-ylk" firstAttribute="leading" secondItem="duj-hu-Whv" secondAttribute="leading" constant="20" id="elQ-dI-dkX"/>
+                            <constraint firstItem="gYa-Cb-WhU" firstAttribute="top" secondItem="sPL-Xu-Gdq" secondAttribute="bottom" constant="50" id="gfK-va-pgW"/>
+                            <constraint firstItem="duj-hu-Whv" firstAttribute="trailing" secondItem="ubk-1f-h9u" secondAttribute="trailing" id="lPM-nT-szA"/>
+                            <constraint firstItem="3Vt-29-ylk" firstAttribute="top" secondItem="Wap-oi-28q" secondAttribute="bottom" constant="40" id="owh-4b-C9R"/>
+                            <constraint firstItem="7zt-Qf-vnh" firstAttribute="leading" secondItem="3Vt-29-ylk" secondAttribute="trailing" constant="30" id="xUd-WG-RKr"/>
+                            <constraint firstItem="duj-hu-Whv" firstAttribute="trailing" secondItem="7zt-Qf-vnh" secondAttribute="trailing" constant="20" id="yW3-Oz-hL3"/>
+                            <constraint firstItem="duj-hu-Whv" firstAttribute="trailing" secondItem="gYa-Cb-WhU" secondAttribute="trailing" constant="20" id="zIC-no-p1D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="duj-hu-Whv"/>
+                    </view>
+                    <connections>
+                        <outlet property="ganador" destination="gYa-Cb-WhU" id="HmJ-pc-Lcg"/>
+                        <outlet property="insNombre" destination="7zt-Qf-vnh" id="xwz-yv-x1d"/>
+                        <outlet property="lista" destination="Wap-oi-28q" id="T8U-Bn-PhX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nSR-af-ygb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2708" y="36"/>
+        </scene>
+    </scenes>
+</document>
