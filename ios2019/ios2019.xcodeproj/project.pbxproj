@@ -27,6 +27,8 @@
 		8437318022447F0B009DE3F7 /* SpotifyLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8437317E22447F0B009DE3F7 /* SpotifyLogin.storyboard */; };
 		8437318222447F6A009DE3F7 /* CountDownTimer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8437318122447F6A009DE3F7 /* CountDownTimer.storyboard */; };
 		8437318522447FE7009DE3F7 /* SimpleView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8437318322447FE7009DE3F7 /* SimpleView.storyboard */; };
+		8445761A225EC5720088ADD3 /* CustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457619225EC5720088ADD3 /* CustomCellViewController.swift */; };
+		8445761C225EC9320088ADD3 /* CellPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8445761B225EC9320088ADD3 /* CellPlaceTableViewCell.swift */; };
 		8469A9CB2224CFA5005E13E9 /* MotionShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469A9CA2224CFA5005E13E9 /* MotionShakeViewController.swift */; };
 		84AD5DA622431E6200F221BE /* endgame.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84AD5DA522431E6100F221BE /* endgame.wav */; };
 		84AD5DA8224326BA00F221BE /* SimpleViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AD5DA7224326BA00F221BE /* SimpleViewViewController.swift */; };
@@ -92,6 +94,8 @@
 		8437317F22447F0B009DE3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SpotifyLogin.storyboard; sourceTree = "<group>"; };
 		8437318122447F6A009DE3F7 /* CountDownTimer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CountDownTimer.storyboard; sourceTree = SOURCE_ROOT; };
 		8437318422447FE7009DE3F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SimpleView.storyboard; sourceTree = "<group>"; };
+		84457619225EC5720088ADD3 /* CustomCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellViewController.swift; sourceTree = "<group>"; };
+		8445761B225EC9320088ADD3 /* CellPlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPlaceTableViewCell.swift; sourceTree = "<group>"; };
 		8469A9CA2224CFA5005E13E9 /* MotionShakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionShakeViewController.swift; sourceTree = "<group>"; };
 		84AD5DA522431E6100F221BE /* endgame.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = endgame.wav; sourceTree = "<group>"; };
 		84AD5DA7224326BA00F221BE /* SimpleViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 		37E1EED5220D125C002A2A71 = {
 			isa = PBXGroup;
 			children = (
+				8445761B225EC9320088ADD3 /* CellPlaceTableViewCell.swift */,
 				8433989C221F850B00E294B0 /* PrimerPracrial.playground */,
 				37812CA92214FBBD00AA901E /* MyPlayground.playground */,
 				37E1EEE0220D125C002A2A71 /* ios2019 */,
@@ -172,6 +177,13 @@
 		37E1EEE0220D125C002A2A71 /* ios2019 */ = {
 			isa = PBXGroup;
 			children = (
+				84B812382239E69800F41734 /* fonts */,
+				84CE85DF2231FFB600D06F7D /* library */,
+				84CE85DC2231F9FA00D06F7D /* files */,
+				84F729172230B31B0099F562 /* sounds */,
+				37E1EEE1220D125C002A2A71 /* AppDelegate.swift */,
+				37E1EEE3220D125C002A2A71 /* ViewController.swift */,
+				37E1EEE5220D125C002A2A71 /* Main.storyboard */,
 				8437318322447FE7009DE3F7 /* SimpleView.storyboard */,
 				8437318122447F6A009DE3F7 /* CountDownTimer.storyboard */,
 				8437317E22447F0B009DE3F7 /* SpotifyLogin.storyboard */,
@@ -180,16 +192,10 @@
 				8437317722447E23009DE3F7 /* PrimerParcial.storyboard */,
 				8437317422447DC2009DE3F7 /* SegundaPractica.storyboard */,
 				8437317122447D2E009DE3F7 /* PrimeraPractica.storyboard */,
-				84B812382239E69800F41734 /* fonts */,
-				84CE85DF2231FFB600D06F7D /* library */,
-				84CE85DC2231F9FA00D06F7D /* files */,
-				84F729172230B31B0099F562 /* sounds */,
-				37E1EEE1220D125C002A2A71 /* AppDelegate.swift */,
-				37E1EEE3220D125C002A2A71 /* ViewController.swift */,
-				37E1EEE5220D125C002A2A71 /* Main.storyboard */,
 				37E1EEE8220D125D002A2A71 /* Assets.xcassets */,
 				37E1EEEA220D125D002A2A71 /* LaunchScreen.storyboard */,
 				37E1EEED220D125D002A2A71 /* Info.plist */,
+				84457619225EC5720088ADD3 /* CustomCellViewController.swift */,
 				37E1EF0F220D1C33002A2A71 /* Practica1ViewController.swift */,
 				376CB99522164E300090F0A6 /* ConvertidorDeGradosViewController.swift */,
 				8433989D221F88C500E294B0 /* PrimerParcialViewController.swift */,
@@ -536,7 +542,9 @@
 				37E1EF10220D1C33002A2A71 /* Practica1ViewController.swift in Sources */,
 				84CE85E7223204DD00D06F7D /* RegisterFormViewController.swift in Sources */,
 				84B812372239E4C400F41734 /* CountDownTimerViewController.swift in Sources */,
+				8445761A225EC5720088ADD3 /* CustomCellViewController.swift in Sources */,
 				37E1EEE2220D125C002A2A71 /* AppDelegate.swift in Sources */,
+				8445761C225EC9320088ADD3 /* CellPlaceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

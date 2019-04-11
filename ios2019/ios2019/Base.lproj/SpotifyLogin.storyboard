@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cnT-42-rMb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +15,7 @@
             <objects>
                 <viewController id="UIK-Nu-FRD" customClass="loginFormViewController" customModule="ios2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BKp-0K-mDK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EOY-ue-QLG"/>
@@ -19,14 +23,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nKr-Pa-Vrv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="721" y="-670"/>
+            <point key="canvasLocation" x="1494" y="110"/>
         </scene>
         <!--Register Form View Controller-->
         <scene sceneID="Gke-cE-e0c">
             <objects>
                 <viewController id="5hn-eP-E2d" customClass="RegisterFormViewController" customModule="ios2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yFa-54-w6a">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Mpo-T4-zwI"/>
@@ -34,18 +38,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Qs-Vg-XKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2238" y="-671"/>
+            <point key="canvasLocation" x="2534" y="-670"/>
         </scene>
         <!--Spotify Login View Controller-->
         <scene sceneID="2Hl-er-f1l">
             <objects>
                 <viewController id="cnT-42-rMb" customClass="SpotifyLoginViewController" customModule="ios2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="js2-Mn-FG6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ge3-0n-wlX">
-                                <rect key="frame" x="78.5" y="104" width="218" height="66"/>
+                                <rect key="frame" x="78.5" y="60" width="218" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="218" id="8gy-Fe-Dv1"/>
                                     <constraint firstAttribute="height" constant="66" id="rbb-Er-bFv"/>
