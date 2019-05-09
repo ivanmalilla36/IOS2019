@@ -112,20 +112,33 @@ FkNvdW50RG93biBUaW1lcg
                                     <segue destination="m9w-jj-Wg2" kind="show" id="BmZ-8d-5Cb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha4-nI-rZB">
+                                <rect key="frame" x="0.0" y="439" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="QrReader">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uRF-v4-CWq" kind="show" id="fee-OU-jjU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dUk-B3-GYJ" firstAttribute="top" secondItem="SKb-2y-yRD" secondAttribute="bottom" constant="15" id="5rP-j0-Yqw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S2E-0L-zXm" secondAttribute="trailing" id="6us-Zy-f8w"/>
                             <constraint firstItem="m75-WH-wsE" firstAttribute="top" secondItem="S2E-0L-zXm" secondAttribute="bottom" constant="10" id="7Ne-IV-1ce"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ha4-nI-rZB" secondAttribute="trailing" id="CsY-zq-mWz"/>
                             <constraint firstItem="SKb-2y-yRD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HHt-ty-9dj"/>
                             <constraint firstItem="S2E-0L-zXm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jz3-7o-0ck"/>
+                            <constraint firstItem="ha4-nI-rZB" firstAttribute="top" secondItem="dUk-B3-GYJ" secondAttribute="bottom" constant="15" id="K9q-wE-32O"/>
                             <constraint firstItem="aIU-36-7qH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LP4-B6-Pte"/>
                             <constraint firstItem="S2E-0L-zXm" firstAttribute="top" secondItem="aIU-36-7qH" secondAttribute="bottom" constant="10" id="M8g-Ed-CmJ"/>
                             <constraint firstItem="IvI-Bo-vUU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Mq1-K2-IcQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dUk-B3-GYJ" secondAttribute="trailing" id="SyM-b5-eH3"/>
                             <constraint firstItem="SKb-2y-yRD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TJX-Sf-4RC"/>
                             <constraint firstItem="TDP-OY-dBn" firstAttribute="top" secondItem="m75-WH-wsE" secondAttribute="bottom" constant="10" id="U5I-nv-vnU"/>
+                            <constraint firstItem="ha4-nI-rZB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UlM-sx-BFd"/>
                             <constraint firstItem="SKb-2y-yRD" firstAttribute="top" secondItem="IvI-Bo-vUU" secondAttribute="bottom" constant="15" id="VD2-lj-YlB"/>
                             <constraint firstItem="m75-WH-wsE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W8Y-vY-a6E"/>
                             <constraint firstItem="wDO-TM-OvH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZDD-GR-7Sq"/>
@@ -232,6 +245,37 @@ FkNvdW50RG93biBUaW1lcg
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTE-Xt-LwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2552" y="-110"/>
+        </scene>
+        <!--Qr Reader View Controller-->
+        <scene sceneID="hz3-kB-zd2">
+            <objects>
+                <viewController id="uRF-v4-CWq" customClass="QrReaderViewController" customModule="ios2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WXk-at-7PP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFV-i4-7iN">
+                                <rect key="frame" x="132.5" y="318.5" width="110" height="30"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Qr Code Reader">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonQr:" destination="uRF-v4-CWq" eventType="touchUpInside" id="eUI-xE-6vF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RFV-i4-7iN" firstAttribute="centerX" secondItem="WXk-at-7PP" secondAttribute="centerX" id="Gd7-ep-OcM"/>
+                            <constraint firstItem="RFV-i4-7iN" firstAttribute="centerY" secondItem="WXk-at-7PP" secondAttribute="centerY" id="qvI-fg-NVB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FOr-FE-mcY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RiJ-gM-5k0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518" y="758"/>
         </scene>
         <!--Custom Cell View Controller-->
         <scene sceneID="Whj-ah-5b1">

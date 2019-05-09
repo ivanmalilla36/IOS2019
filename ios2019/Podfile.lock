@@ -1,16 +1,20 @@
 PODS:
+  - QRCodeReader.swift (10.0.0)
   - SwiftySound (1.0.0)
 
 DEPENDENCIES:
+  - QRCodeReader.swift (~> 10.0.0)
   - SwiftySound
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - QRCodeReader.swift
     - SwiftySound
 
 SPEC CHECKSUMS:
+  QRCodeReader.swift: 74d0378eb0c7807828552b49626bbc8307495aee
   SwiftySound: b9c3370956fd4ed65ed79d45563070077a50a2cd
 
-PODFILE CHECKSUM: f9a95cfc88fddb7bc1cb44814296b95b426d2d2e
+PODFILE CHECKSUM: 9e2afbf97af0454622ae39ae50ed8b7721050de3
 
 COCOAPODS: 1.6.1

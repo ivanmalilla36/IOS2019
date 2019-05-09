@@ -6,6 +6,7 @@ target 'ios2019' do
   use_frameworks!
 
    pod 'SwiftySound'
+   pod 'QRCodeReader.swift', '~> 10.0.0'
 
   # Pods for ios2019
 
