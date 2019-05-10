@@ -33,6 +33,7 @@
 		8469A9CB2224CFA5005E13E9 /* MotionShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469A9CA2224CFA5005E13E9 /* MotionShakeViewController.swift */; };
 		84AD5DA622431E6200F221BE /* endgame.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84AD5DA522431E6100F221BE /* endgame.wav */; };
 		84AD5DA8224326BA00F221BE /* SimpleViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AD5DA7224326BA00F221BE /* SimpleViewViewController.swift */; };
+		84B0C91D2285003F003E529C /* getHttpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0C91C2285003F003E529C /* getHttpViewController.swift */; };
 		84B812372239E4C400F41734 /* CountDownTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B812362239E4C400F41734 /* CountDownTimerViewController.swift */; };
 		84B8123D2239E6DC00F41734 /* Technology-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84B812392239E6DC00F41734 /* Technology-Bold.ttf */; };
 		84B8123E2239E6DC00F41734 /* Technology-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84B8123A2239E6DC00F41734 /* Technology-Italic.ttf */; };
@@ -101,6 +102,7 @@
 		8469A9CA2224CFA5005E13E9 /* MotionShakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionShakeViewController.swift; sourceTree = "<group>"; };
 		84AD5DA522431E6100F221BE /* endgame.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = endgame.wav; sourceTree = "<group>"; };
 		84AD5DA7224326BA00F221BE /* SimpleViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewViewController.swift; sourceTree = "<group>"; };
+		84B0C91C2285003F003E529C /* getHttpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getHttpViewController.swift; sourceTree = "<group>"; };
 		84B812362239E4C400F41734 /* CountDownTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerViewController.swift; sourceTree = "<group>"; };
 		84B812392239E6DC00F41734 /* Technology-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Technology-Bold.ttf"; sourceTree = "<group>"; };
 		84B8123A2239E6DC00F41734 /* Technology-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Technology-Italic.ttf"; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				84F729152230AF0C0099F562 /* SonarViewController.swift */,
 				8469A9CA2224CFA5005E13E9 /* MotionShakeViewController.swift */,
 				844712152283AB5500CBFC9B /* QrReaderViewController.swift */,
+				84B0C91C2285003F003E529C /* getHttpViewController.swift */,
 			);
 			path = ios2019;
 			sourceTree = "<group>";
@@ -512,14 +515,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ios2019/Pods-ios2019-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftySound/SwiftySound.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftySound.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,6 +552,7 @@
 				84CE85E52232048A00D06F7D /* loginFormViewController.swift in Sources */,
 				376CB99622164E300090F0A6 /* ConvertidorDeGradosViewController.swift in Sources */,
 				84AD5DA8224326BA00F221BE /* SimpleViewViewController.swift in Sources */,
+				84B0C91D2285003F003E529C /* getHttpViewController.swift in Sources */,
 				37E1EF10220D1C33002A2A71 /* Practica1ViewController.swift in Sources */,
 				84CE85E7223204DD00D06F7D /* RegisterFormViewController.swift in Sources */,
 				84B812372239E4C400F41734 /* CountDownTimerViewController.swift in Sources */,

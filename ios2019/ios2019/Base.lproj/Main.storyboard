@@ -122,9 +122,20 @@ FkNvdW50RG93biBUaW1lcg
                                     <segue destination="uRF-v4-CWq" kind="show" id="fee-OU-jjU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bA-31-pUu">
+                                <rect key="frame" x="0.0" y="484" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Get Http">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sHC-RH-C6Q" kind="show" id="p7n-p4-YX5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0bA-31-pUu" secondAttribute="trailing" id="02H-9r-Hy5"/>
                             <constraint firstItem="dUk-B3-GYJ" firstAttribute="top" secondItem="SKb-2y-yRD" secondAttribute="bottom" constant="15" id="5rP-j0-Yqw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S2E-0L-zXm" secondAttribute="trailing" id="6us-Zy-f8w"/>
                             <constraint firstItem="m75-WH-wsE" firstAttribute="top" secondItem="S2E-0L-zXm" secondAttribute="bottom" constant="10" id="7Ne-IV-1ce"/>
@@ -144,6 +155,7 @@ FkNvdW50RG93biBUaW1lcg
                             <constraint firstItem="wDO-TM-OvH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZDD-GR-7Sq"/>
                             <constraint firstItem="jSI-zf-8gU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="a5B-s2-mJX"/>
                             <constraint firstItem="wDO-TM-OvH" firstAttribute="top" secondItem="TDP-OY-dBn" secondAttribute="bottom" constant="10" id="cO1-ok-uWP"/>
+                            <constraint firstItem="0bA-31-pUu" firstAttribute="top" secondItem="ha4-nI-rZB" secondAttribute="bottom" constant="15" id="ekT-ph-qPg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wDO-TM-OvH" secondAttribute="trailing" id="fVL-93-RAd"/>
                             <constraint firstItem="jSI-zf-8gU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iEJ-Pa-SvY"/>
                             <constraint firstItem="TDP-OY-dBn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="joJ-6p-T4e"/>
@@ -154,6 +166,7 @@ FkNvdW50RG93biBUaW1lcg
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m75-WH-wsE" secondAttribute="trailing" id="st5-AI-w14"/>
                             <constraint firstItem="TDP-OY-dBn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tld-dR-EA5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aIU-36-7qH" secondAttribute="trailing" id="tmn-IK-7Te"/>
+                            <constraint firstItem="0bA-31-pUu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u3L-Ub-RFj"/>
                             <constraint firstItem="aIU-36-7qH" firstAttribute="top" secondItem="jSI-zf-8gU" secondAttribute="bottom" constant="10" id="x8a-VM-YuP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -245,6 +258,67 @@ FkNvdW50RG93biBUaW1lcg
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTE-Xt-LwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2552" y="-110"/>
+        </scene>
+        <!--Get Http View Controller-->
+        <scene sceneID="JIQ-rz-mjS">
+            <objects>
+                <viewController id="sHC-RH-C6Q" customClass="getHttpViewController" customModule="ios2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0K7-OH-yGB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yth-Qd-BfM">
+                                <rect key="frame" x="0.0" y="94" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Id" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRO-48-s3a">
+                                <rect key="frame" x="0.0" y="134" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="URf-Ut-TrT">
+                                <rect key="frame" x="0.0" y="179" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Completed" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BMs-5Q-dPr">
+                                <rect key="frame" x="0.0" y="224" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DLG-su-Fpl" firstAttribute="trailing" secondItem="yth-Qd-BfM" secondAttribute="trailing" id="14Z-9p-3Pe"/>
+                            <constraint firstItem="DLG-su-Fpl" firstAttribute="trailing" secondItem="bRO-48-s3a" secondAttribute="trailing" id="3QB-Gh-1Jp"/>
+                            <constraint firstItem="DLG-su-Fpl" firstAttribute="trailing" secondItem="URf-Ut-TrT" secondAttribute="trailing" id="5WS-Ik-fg3"/>
+                            <constraint firstItem="URf-Ut-TrT" firstAttribute="top" secondItem="bRO-48-s3a" secondAttribute="bottom" constant="15" id="8Pj-BI-T89"/>
+                            <constraint firstItem="URf-Ut-TrT" firstAttribute="leading" secondItem="DLG-su-Fpl" secondAttribute="leading" id="GTO-Xx-2Qt"/>
+                            <constraint firstItem="yth-Qd-BfM" firstAttribute="top" secondItem="DLG-su-Fpl" secondAttribute="top" constant="30" id="Kjv-Qe-zl5"/>
+                            <constraint firstItem="bRO-48-s3a" firstAttribute="leading" secondItem="DLG-su-Fpl" secondAttribute="leading" id="Vbo-v7-i2e"/>
+                            <constraint firstItem="DLG-su-Fpl" firstAttribute="trailing" secondItem="BMs-5Q-dPr" secondAttribute="trailing" id="bpH-hS-RfD"/>
+                            <constraint firstItem="yth-Qd-BfM" firstAttribute="leading" secondItem="DLG-su-Fpl" secondAttribute="leading" id="diF-36-Xoi"/>
+                            <constraint firstItem="bRO-48-s3a" firstAttribute="top" secondItem="yth-Qd-BfM" secondAttribute="bottom" constant="10" id="gPL-b9-ZTf"/>
+                            <constraint firstItem="BMs-5Q-dPr" firstAttribute="top" secondItem="URf-Ut-TrT" secondAttribute="bottom" constant="15" id="iCc-bs-JPn"/>
+                            <constraint firstItem="BMs-5Q-dPr" firstAttribute="leading" secondItem="DLG-su-Fpl" secondAttribute="leading" id="lwP-TC-36Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DLG-su-Fpl"/>
+                    </view>
+                    <connections>
+                        <outlet property="OuletUserId" destination="yth-Qd-BfM" id="Pmj-1o-3Dd"/>
+                        <outlet property="OutletCompleted" destination="BMs-5Q-dPr" id="jNz-OI-ma9"/>
+                        <outlet property="OutletId" destination="bRO-48-s3a" id="gao-g7-axn"/>
+                        <outlet property="OutletTitle" destination="URf-Ut-TrT" id="BZq-dL-c9d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NgF-YI-vI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2877" y="293"/>
         </scene>
         <!--Qr Reader View Controller-->
         <scene sceneID="hz3-kB-zd2">
@@ -350,7 +424,7 @@ FkNvdW50RG93biBUaW1lcg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdo-Nh-ZB6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2612" y="400.74962518740631"/>
+            <point key="canvasLocation" x="2198" y="758"/>
         </scene>
     </scenes>
     <resources>

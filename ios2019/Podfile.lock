@@ -1,20 +1,28 @@
 PODS:
+  - Alamofire (4.4.0)
   - QRCodeReader.swift (10.0.0)
+  - SwiftyJSON (4.2.0)
   - SwiftySound (1.0.0)
 
 DEPENDENCIES:
+  - Alamofire (= 4.4)
   - QRCodeReader.swift (~> 10.0.0)
+  - SwiftyJSON (~> 4.2.0)
   - SwiftySound
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - QRCodeReader.swift
+    - SwiftyJSON
     - SwiftySound
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   QRCodeReader.swift: 74d0378eb0c7807828552b49626bbc8307495aee
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   SwiftySound: b9c3370956fd4ed65ed79d45563070077a50a2cd
 
-PODFILE CHECKSUM: 9e2afbf97af0454622ae39ae50ed8b7721050de3
+PODFILE CHECKSUM: 58007cbe481ab02a7d281a16133172891b795acc
 
 COCOAPODS: 1.6.1
